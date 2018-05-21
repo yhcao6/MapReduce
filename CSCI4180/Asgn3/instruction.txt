@@ -1,0 +1,14 @@
+Upload:
+
+1. 
+
+Buff: chunk data
+
+offsets: anchors
+
+chunks: store chunksumStr, indicate a file contains which chunk
+
+
+Read byte by byte until size above min-size, if rfp equal to interest, mark an anchor; calculate sha-1 of this chunk. add sha-1 value to chunks
+
+Check if sha-1 not exists in index. If is, add {she-1 value: refcount(1)} to indexOfChunk; If yes, add refcount of this chunk by 1.

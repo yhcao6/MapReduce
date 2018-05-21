@@ -1,0 +1,16 @@
+file "a_res" is the result of part (a);
+
+file "b_res" is the result of part (b);
+
+file "c_report" is the report of part (c);
+
+file "d_res" is the res of part (d);
+
+
+In "code" directory:
+
+directory "a" is the code of part (a, c);
+
+directory "b" is the code of part (b, d);
+
+code "a" and code "b" are actually very similar except the output format.
